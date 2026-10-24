@@ -85,11 +85,11 @@
   },
   {
     "path": "evidence/docker-verification.json",
-    "sha256": "b2628ca865ec0002fa8a9076490bcbafe9dddc55aad837a5defd2f98e091ed88"
+    "sha256": "0010851e82af84774ff34f9eaf51ae06cb15505b78f83be32848c640646c0b78"
   },
   {
     "path": "evidence/image-scan-summary.json",
-    "sha256": "9da9ae9cc75c6b7ca878bd953bd451879c79718c10899cfd407d3382b51b4885"
+    "sha256": "7a00be23ed68bcdd91effe240d76f6c4c14e015df2af51d6354f7e593d6e8deb"
   },
   {
     "path": "evidence/real-integrations.json",

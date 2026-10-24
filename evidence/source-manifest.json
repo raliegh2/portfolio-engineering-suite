@@ -1,0 +1,218 @@
+[
+  {
+    "path": ".github/workflows/ci.yml",
+    "sha256": "058f7ddcfadfc0244f3fa78521fe24d1a6be9f222c67f478b83daea3fef18fdf"
+  },
+  {
+    "path": "ARCHITECTURE.md",
+    "sha256": "d9ca28acd0a93ec8ea4dad47535e634b92212cca58289a97cf22d836e92bc63e"
+  },
+  {
+    "path": "CASE_STUDIES.md",
+    "sha256": "5ddfe472c9785bc208094bdd60c6eac1dcce1154d63571c222965cb01fde6ae5"
+  },
+  {
+    "path": "ORCHESTRATION.md",
+    "sha256": "db14d565192e2d24fff0a6b019fec2e65fa5aeacc6a132f675b755860a18eff9"
+  },
+  {
+    "path": "README.md",
+    "sha256": "ae7a6ee62edfb18f3a8446a30427ae11814b1eb229403c6f9ec706d404021c23"
+  },
+  {
+    "path": "ROADMAP.md",
+    "sha256": "730e91b69f10185dc4482594035ce515521c5cbf1172049863edfa5832bbc636"
+  },
+  {
+    "path": "STATUS.json",
+    "sha256": "bcb0b37b7c41530fac99fe95db942b5a023e135491e65cc47fb7f6db9db8efee"
+  },
+  {
+    "path": "cloud/migrations/0001.sql",
+    "sha256": "89322846594e815cddb242b126357b6967e02f1c93e6113a77e6c273295132b4"
+  },
+  {
+    "path": "cloud/migrations/0002.sql",
+    "sha256": "47369b821ab53b01c3acedfe14fdd5e54e29ad4a3ae5642aba9400356cb8b002"
+  },
+  {
+    "path": "cloud/worker.js",
+    "sha256": "02855751946b922d9c93fc74d39217287c766361fb277acf16dba767347cb216"
+  },
+  {
+    "path": "cloud/wrangler.example.json",
+    "sha256": "c7674bf89a32c3aa4882f76db7bdb0568283972fd721792ddc906f088dc4e6c0"
+  },
+  {
+    "path": "deploy/Dockerfile.txt",
+    "sha256": "7d2cbab8f9e7b2eb209beec75f184ad56c7b1b08137d193b501b818c3749567c"
+  },
+  {
+    "path": "deploy/compose.yml",
+    "sha256": "09cc55b5c70e0ca36e8afc4afcd130bc5ed972eb9fedd46aba925a7690b6c157"
+  },
+  {
+    "path": "docs/INTEGRATIONS.md",
+    "sha256": "ba82a2cbe17739a7dd98923cc270592789198ddc4a039f36e739091eb456f2ae"
+  },
+  {
+    "path": "docs/tracks/ai-evaluation.md",
+    "sha256": "28ed5b04e58b7638c4d91cf752d618633176b1b429546cf6b3290eb99e9ad51d"
+  },
+  {
+    "path": "docs/tracks/secure-delivery.md",
+    "sha256": "9e32d7e410b5ef1fa8a54d0cbaa2f58ab4467dee95bff18e90957313772c0364"
+  },
+  {
+    "path": "docs/tracks/security-operations.md",
+    "sha256": "5edd089f1ebd31d63b1a77783256449cc44ef39d9d61c91ca180b2ee6519a710"
+  },
+  {
+    "path": "docs/tracks/trading-infrastructure.md",
+    "sha256": "6a5ef020e366fe82e63fd08eede0444d6062b231737b86825a348bf85bc0e447"
+  },
+  {
+    "path": "docs/tracks/vulnerability-management.md",
+    "sha256": "18ad9e93070f83c15029c6314ff18d7a53c909979ff9217a85344ed9c1932753"
+  },
+  {
+    "path": "evidence/broker-history-verification.json",
+    "sha256": "07a770b3420f878a9d6078d82b542ba10c201da36e68489eb67211d23f24e6c6"
+  },
+  {
+    "path": "evidence/cloud-verification.json",
+    "sha256": "f7187a10a1242649003380d4091e781dc40f28fafbc9522595677bf1859a242b"
+  },
+  {
+    "path": "evidence/docker-verification.json",
+    "sha256": "b2628ca865ec0002fa8a9076490bcbafe9dddc55aad837a5defd2f98e091ed88"
+  },
+  {
+    "path": "evidence/image-scan-summary.json",
+    "sha256": "9da9ae9cc75c6b7ca878bd953bd451879c79718c10899cfd407d3382b51b4885"
+  },
+  {
+    "path": "evidence/real-integrations.json",
+    "sha256": "7e5a5221ace31e4df15db23ec490e29b903d6304359f68df708fc075fd7d25fb"
+  },
+  {
+    "path": "package.json",
+    "sha256": "4dc3c9e615ea96d83b73ab3164c1408be9611add7f9ec72a1d6fcfd1851fc0d4"
+  },
+  {
+    "path": "requirements-broker.txt",
+    "sha256": "d2db2d6c0c308b080ac1b7c2cdca59b5198682b470fe89d96cab8e673294b047"
+  },
+  {
+    "path": "scripts/cloud-smoke.js",
+    "sha256": "a1df9d66bcb7e0dbd9725dce656b9b894f4fa7f875a0cf92d7844ad16bee6361"
+  },
+  {
+    "path": "scripts/collect-windows.ps1",
+    "sha256": "974a53fbbc037f3481889906fad44c1c12948abc3877e70a9312ad916309b595"
+  },
+  {
+    "path": "scripts/market-history-replay.js",
+    "sha256": "193e9da69f680a7420b1b0c4085881a7dcf36d5c7a678493f4986642158873eb"
+  },
+  {
+    "path": "scripts/mt5-readonly.py",
+    "sha256": "771afbbc7d1470c841367f9d12afcc8d44bf71104ce581c0f65e802cb70d7eda"
+  },
+  {
+    "path": "src/agent.js",
+    "sha256": "b06931a04037d001115069225be2a0c77bc5d87e8f37840ebe767b9be00b21a4"
+  },
+  {
+    "path": "src/broker-lifecycle.js",
+    "sha256": "7494562da038896e69637be9dec4266d3ecf16f111cd55e1fd74da037186e6fc"
+  },
+  {
+    "path": "src/build.js",
+    "sha256": "62dae2e6e648e8958ba2af498fce888735d2cf308aa02abae9f94b913668447d"
+  },
+  {
+    "path": "src/check.js",
+    "sha256": "523c98ba4710bca0cba7e67eac11ea18e19bd87557e6f05d3db345c17871f6b8"
+  },
+  {
+    "path": "src/church.js",
+    "sha256": "1c471ca2cd19f75cf22bb95c61595ef47ea0ee196c1a80433e2f7cb300370489"
+  },
+  {
+    "path": "src/ci.js",
+    "sha256": "9234927968f94712c8609f2daf27bef5f2dd15b8c33ef2cc03a43f70cf7e9ab7"
+  },
+  {
+    "path": "src/cli.js",
+    "sha256": "babef2b89488909d0bac47bf8ba28df6ec6ec2d4bd434d794276449f7b4b5895"
+  },
+  {
+    "path": "src/cloud-client.js",
+    "sha256": "6e06fa5bea9a90f9cbbf3e1c395e147b909a71e901f88b2b4fe0311322f042bf"
+  },
+  {
+    "path": "src/collectors.js",
+    "sha256": "3cb8c1e7aca3e01a209d9950161fa44120a3c5a927f38b40572e85c53cb91a70"
+  },
+  {
+    "path": "src/common.js",
+    "sha256": "450c8d0911a886e283a39149b096c1857503f4ac58f4bd577bb1867e7fe36409"
+  },
+  {
+    "path": "src/demo.js",
+    "sha256": "29203d6b35a00d31e99bc43a20721ec7b45c3a6472d1add7026e7057c9c00329"
+  },
+  {
+    "path": "src/demos.js",
+    "sha256": "6de2447cfa4abc8e0e5516885d5b15d3e1adb5220758d92d8434774bb3e99412"
+  },
+  {
+    "path": "src/evaluator.js",
+    "sha256": "2d3cf6ca336cbd74aa583038256ddbdf1a3a1d9afe99b61b575204e1fca24f58"
+  },
+  {
+    "path": "src/fixtures.js",
+    "sha256": "cbe82ccff94ef912754db03449ff175299dcd4c55450e9bad03db755fcd689fa"
+  },
+  {
+    "path": "src/market-history.js",
+    "sha256": "8716222d8fccf7255beba287ced92c69ce7e37dd1e1f517ceabdd0470fbd567c"
+  },
+  {
+    "path": "src/releases.js",
+    "sha256": "9a630574fe8f9fc61851e9562a5d0620a5ea8fee9acf5b2c2ebb6a71d992a1ed"
+  },
+  {
+    "path": "src/remediation.js",
+    "sha256": "06d2c27f29e3200c790771c409e842fb0dc13144e8984e2b200259625b9be452"
+  },
+  {
+    "path": "src/replay.js",
+    "sha256": "ad86c3601fcba63a0248d9f90290bc847cfdfe36f5b2b6aada0ace2d03598c77"
+  },
+  {
+    "path": "src/scanners.js",
+    "sha256": "8e070e709edf7b62d6c49ddfa07f1ce4651a018f88c4fead9d8746472d7d9679"
+  },
+  {
+    "path": "src/soc.js",
+    "sha256": "708f4ca985af72ef20395bf4a68f6265fa30f79df8de9dd6f57639018bb22954"
+  },
+  {
+    "path": "test/evaluator.test.js",
+    "sha256": "74aff173bb41d20134e0eb8c3009cddfde49ab6bb9c3cb91fe54b2fb3875dcc3"
+  },
+  {
+    "path": "test/http.test.js",
+    "sha256": "fbd9b5bca230d701f82c2db45509c22f9a9f90a2101da018cc5e9c4176d55a99"
+  },
+  {
+    "path": "test/integrations.test.js",
+    "sha256": "2cb97fd4141eea0c993417e36e9ba30a48a2401e07bc10c45006ac082a0873f7"
+  },
+  {
+    "path": "test/projects.test.js",
+    "sha256": "ff9c642b9af3d516fed1907cfc07f1a07a4ba6e7f74930f13b871eb1abbd50ae"
+  }
+]

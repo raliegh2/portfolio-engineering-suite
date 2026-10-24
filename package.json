@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-engineering-foundations",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node src/check.js",
+    "demo": "node src/demo.js && node src/cli.js demo",
+    "agent:live": "node src/cli.js agent-live",
+    "release:demo": "node src/cli.js release-demo",
+    "fixtures": "node src/cli.js fixtures",
+    "serve": "node src/cli.js serve",
+    "ci": "node src/ci.js"
+  },
+  "engines": { "node": ">=22.16.0" }
+}

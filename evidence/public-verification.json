@@ -1,0 +1,13 @@
+{
+  "observedAt": "2026-10-24T17:06:12.207Z",
+  "testsPassed": 71,
+  "testsFailed": 0,
+  "localCiPassed": true,
+  "liveConstrainedTasks": {
+    "completed": 3,
+    "total": 3
+  },
+  "privateCredentialScan": "passed",
+  "publishedFileCount": 54,
+  "notes": "Real integrations and image/recovery receipts are separate sanitized JSON files. No private machine logs, databases, account snapshots or credentials are included."
+}

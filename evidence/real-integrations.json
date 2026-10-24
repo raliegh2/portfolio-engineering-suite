@@ -1,0 +1,36 @@
+{
+  "observedAt": "2026-10-24T17:00:12.525Z",
+  "windows": {
+    "actualRecords": 100,
+    "rawRecordsPublished": false,
+    "cloudTelemetryIngested": true
+  },
+  "incidents": {
+    "syntheticAlerts": 3,
+    "analystDispositionsVerified": true
+  },
+  "scanner": {
+    "actualTrivyScan": true,
+    "beforeFindings": 51,
+    "afterFindings": 0,
+    "localRetestClosures": 51,
+    "localSummary": {
+      "total": 51,
+      "open": 0,
+      "closed": 51
+    },
+    "cloudRetestClosures": 51
+  },
+  "cloudRecovery": {
+    "mode": "actual-independent-D1-databases",
+    "restored": true,
+    "durationMs": 1187.6159999999982,
+    "snapshotSha256": "823b861a14ee45c0cc0960d63d3047a0ff62c864f0567b779dda319d3e3f8a36"
+  },
+  "broker": {
+    "mode": "actual-MT5-demo-read-only",
+    "bars": 500,
+    "ordersSubmitted": 0
+  },
+  "publicData": "Sanitized summary only; logs, snapshots, backups and credentials retained privately"
+}

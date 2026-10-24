@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "projectId": "portfolio-engineering-foundations",
+  "scope": "Five integrated projects; real Windows/scanner/cloud/demo-broker connections, synthetic cloud data and paper-only execution",
+  "tracks": [
+    { "id": "ai-evaluation", "state": "implemented", "entry": "npm run agent:live", "evidence": "evidence/agent-live.json" },
+    { "id": "soc-monitoring", "state": "implemented", "entry": "node src/cli.js soc examples/security.jsonl evidence/soc", "evidence": "evidence/suite-report.json" },
+    { "id": "vulnerability-remediation", "state": "implemented", "entry": "node src/cli.js vuln report work/findings.sqlite", "evidence": "evidence/suite-report.json" },
+    { "id": "secure-delivery", "state": "implemented-locally", "entry": "npm run serve", "evidence": "evidence/release-report.json" },
+    { "id": "trading-replay", "state": "implemented-offline", "entry": "node src/cli.js replay examples/trading.json evidence/replay.json", "evidence": "evidence/suite-report.json" }
+  ],
+  "validation": { "testsPassed": 71, "testsFailed": 0, "liveTasksCompleted": 3, "liveTasksTotal": 3, "releaseSequence": ["v1", "v2", "v1"], "actualWindowsRecords":100, "actualBrokerBars":500, "cloudSnapshotRestore":true },
+  "cloudHealth": "https://portfolio-engineering-sandbox.church-care-hub.workers.dev/health",
+  "executionBoundary": "No external broker order submission or production church-data changes",
+  "publicationEvidence": "evidence/publication.json is written after public GitHub verification",
+  "queueNote": "Original five work briefs may remain queued because the existing Deck API has no work-item completion endpoint. Applied source and dated reports are implementation evidence."
+}

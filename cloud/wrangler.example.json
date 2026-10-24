@@ -1,0 +1,7 @@
+{
+ "name":"portfolio-engineering-sandbox",
+ "main":"worker.js",
+ "compatibility_date":"2026-10-24",
+ "vars":{"BUILD_VERSION":"1"},
+ "d1_databases":[{"binding":"DB","database_name":"portfolio-engineering-sandbox","database_id":"REPLACE_WITH_YOUR_SANDBOX_DATABASE_ID","migrations_dir":"migrations"}]
+}

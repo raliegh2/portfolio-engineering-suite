@@ -1,0 +1,14 @@
+{
+  "readOnly": true,
+  "capabilities": "ALL dropped",
+  "uid": "1000",
+  "imageId": "sha256:fd22c490a3f2725d8689da8c52458dc8312def61fe1730bf0a08c98388b32efd",
+  "observedAt": "2026-10-24T17:04:32.2564490Z",
+  "loopbackOnly": true,
+  "health": {
+    "status": "ok",
+    "release": "development",
+    "build": "development",
+    "mode": "synthetic-local-sandbox"
+  }
+}

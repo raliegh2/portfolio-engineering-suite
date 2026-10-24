@@ -1,0 +1,20 @@
+services:
+  church-sandbox:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.txt
+    ports:
+      - "127.0.0.1:8894:8894"
+    environment:
+      CHURCH_BIND_HOST: "0.0.0.0"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    tmpfs: ["/tmp"]
+    mem_limit: 256m
+    pids_limit: 64
+    volumes:
+      - church-data:/data
+    restart: "no"
+volumes:
+  church-data:

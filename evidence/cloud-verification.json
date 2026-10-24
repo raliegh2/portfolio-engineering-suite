@@ -1,0 +1,23 @@
+{
+  "observedAt": "2026-10-24T16:54:37.441Z",
+  "origin": "https://portfolio-engineering-sandbox.church-care-hub.workers.dev",
+  "mode": "actual-deployed-workers-d1",
+  "health": "ok",
+  "roleChecks": {
+    "volunteerOwnGroupOnly": true,
+    "privateFieldsHidden": true,
+    "deniedWrite": true,
+    "deniedAudit": true
+  },
+  "remediation": {
+    "imported": 1,
+    "idempotent": true,
+    "closureBlocked": true,
+    "closedAfterRetest": true
+  },
+  "backup": {
+    "exported": true,
+    "sha256": "4788fac52cd74720c7f4e23bbbb3bb12cc11e12a263ba14176d610de0c4abf8e",
+    "schema": 1
+  }
+}

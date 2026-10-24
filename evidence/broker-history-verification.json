@@ -1,0 +1,11 @@
+{
+  "mode": "actual-broker-data-offline-replay",
+  "sourceBars": 500,
+  "sourceSha256": "4a7849c2e2aa09319c37e8a1ce46915dc044398a00f3226a0b491164569cf77e",
+  "priceScale": 100000,
+  "deterministic": true,
+  "ledgerSha256": "5fee2eceff369c54e6362012f28a0e6c401453e6201b5ef469f510c8aec28a8d",
+  "finalPosition": 0,
+  "ordersSubmittedToBroker": 0,
+  "assumptions": "One simulated unit; zero fees and one quote-unit slippage; logical simulation clocks preserve price order without asserting broker timestamp timezone. Not strategy performance or account-currency profit."
+}

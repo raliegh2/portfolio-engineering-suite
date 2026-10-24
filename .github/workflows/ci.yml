@@ -1,0 +1,50 @@
+name: Portfolio engineering verification
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verification:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22.23.1'
+      - run: npm run ci
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: portfolio-evidence-${{ matrix.os }}
+          path: |
+            evidence/ci-report.json
+            evidence/suite-report.json
+            evidence/dashboard.html
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Build runtime image
+        run: docker build -f deploy/Dockerfile.txt -t portfolio-engineering:ci .
+      - name: Verify container starts with dropped capabilities
+        run: |
+          docker run -d --name portfolio-smoke --read-only --cap-drop ALL --security-opt no-new-privileges --tmpfs /tmp --tmpfs /data:uid=1000,gid=1000 -e CHURCH_BIND_HOST=0.0.0.0 -p 127.0.0.1:8895:8894 portfolio-engineering:ci
+          for attempt in $(seq 1 30); do curl --fail --silent http://127.0.0.1:8895/health && break || sleep 1; done
+          curl --fail http://127.0.0.1:8895/health
+          docker rm -f portfolio-smoke
+      - name: Gate critical and high image vulnerabilities
+        run: |
+          mkdir -p evidence
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v "$PWD/evidence:/reports" aquasec/trivy@sha256:790fd66d1697395d8693d1acaa1ea702406a20f109b6fc7bac8db623eca6c06c image --scanners vuln --severity HIGH,CRITICAL --exit-code 1 --format json --output /reports/image-scan.json portfolio-engineering:ci
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: container-scan
+          path: evidence/image-scan.json
+  cloud-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check deployed synthetic sandbox
+        run: curl --fail --retry 3 https://portfolio-engineering-sandbox.church-care-hub.workers.dev/health
